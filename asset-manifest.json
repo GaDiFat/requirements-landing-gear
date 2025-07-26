@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/requirements-landing-gear/static/css/main.9e053196.css",
+    "main.js": "/requirements-landing-gear/static/js/main.5e9870e6.js",
+    "index.html": "/requirements-landing-gear/index.html",
+    "main.9e053196.css.map": "/requirements-landing-gear/static/css/main.9e053196.css.map",
+    "main.5e9870e6.js.map": "/requirements-landing-gear/static/js/main.5e9870e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e053196.css",
+    "static/js/main.5e9870e6.js"
+  ]
+}
