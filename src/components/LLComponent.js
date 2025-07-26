@@ -29,7 +29,7 @@ const llReqs = [
   },
   {
     id: "LL06",
-    text: "El sistema debe registrar un evento crítico identificado como 0xA5 si no se detecta peso en el tren y el avión no está en vuelo.",
+    text: "El sistema debe registrar una alerta de insconsistencia de peso si no se detecta peso en el tren y el avión no está en vuelo.",
     hlLink: "HL03",
   },
   {
@@ -59,7 +59,7 @@ const llReqs = [
   },
   {
     id: "LL12",
-    text: "Si las condiciones operativas no se cumplen, el sistema debe bloquear el comando de extensión y registrar un evento de seguridad con código 0xB3.",
+    text: "Si las condiciones operativas no se cumplen, el sistema debe bloquear el comando de extensión y registrar un evento de seguridad de incumplimiento de condiciones operativas.",
     hlLink: "HL06",
   },
 ];
