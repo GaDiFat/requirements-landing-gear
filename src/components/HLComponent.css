@@ -1,0 +1,25 @@
+.hl-list {
+  padding: 20px;
+}
+
+.hl-item {
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 4px solid #2196f3;
+}
+
+.hl-item.highlight {
+  background-color: #e3f2fd;
+  border-color: #0d47a1;
+}
+
+.linked-buttons button {
+  margin-right: 8px;
+  margin-top: 8px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
