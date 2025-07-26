@@ -47,18 +47,14 @@ const llReqs = [
     text: "El sistema deberá generar una alarma sonora intermitente de 30 segundos de duración si el tren de aterrizaje cumple con las condiciones de despegue y permanece extendido 10 segundos.",
     hlLink: "HL05",
   },
+
   {
     id: "LL10",
-    text: "El sistema debe verificar que los comandos de tren se ejecutan bajo condiciones válidas de altitud y velocidad.",
+    text: "El sistema debe determinar que se cumplen las condiciones operacionales si la velocidad estimada es menor a 180 nudos y la altitud estimada menor a 10,000 pies antes de ejecutar el comando de extensión del tren de aterrizaje.",
     hlLink: "HL06",
   },
   {
     id: "LL11",
-    text: "El sistema debe validar que la velocidad sea menor a 180 nudos y la altitud menor a 10,000 pies antes de ejecutar el comando de extensión del tren de aterrizaje.",
-    hlLink: "HL06",
-  },
-  {
-    id: "LL12",
     text: "Si las condiciones operativas no se cumplen, el sistema debe bloquear el comando de extensión y registrar un evento de seguridad de incumplimiento de condiciones operativas.",
     hlLink: "HL06",
   },

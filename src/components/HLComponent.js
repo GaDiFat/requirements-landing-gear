@@ -29,8 +29,8 @@ const hlReqs = [
   },
   {
     id: "HL06",
-    text: "El sisitema debe validar condiciones operacionales antes de ejecutar comandos del tren.",
-    llLinks: ["LL10", "LL11", "LL12"],
+    text: "El sistema debe validar condiciones operacionales antes de ejecutar comandos del tren.",
+    llLinks: ["LL10", "LL11"],
   },
 ];
 
