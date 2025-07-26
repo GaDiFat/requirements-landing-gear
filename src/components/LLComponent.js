@@ -1,6 +1,15 @@
 import React from "react";
 import "./LLComponent.css";
 
+// Mapeo LL → HW para trazabilidad
+const llHWMap = {
+  LL05: ["HW06"],
+  LL07: ["HW05"],
+  LL09: ["HW01", "HW02"],
+  LL10: ["HW03"],
+  LL11: ["HW04"],
+};
+
 const llReqs = [
   {
     id: "LL01",
@@ -47,7 +56,6 @@ const llReqs = [
     text: "El sistema deberá generar una alarma sonora intermitente de 30 segundos de duración si el tren de aterrizaje cumple con las condiciones de despegue y permanece extendido 10 segundos.",
     hlLink: "HL05",
   },
-
   {
     id: "LL10",
     text: "El sistema debe determinar que se cumplen las condiciones operacionales si la velocidad estimada es menor a 180 nudos y la altitud estimada menor a 10,000 pies antes de ejecutar el comando de extensión del tren de aterrizaje.",
@@ -60,7 +68,7 @@ const llReqs = [
   },
 ];
 
-function LLComponent({ highlightLL, onHLFocus }) {
+function LLComponent({ highlightLL, onHLFocus, onHWFocus }) {
   return (
     <div className="ll-list">
       <h2>Requerimientos Low Level</h2>
@@ -71,7 +79,24 @@ function LLComponent({ highlightLL, onHLFocus }) {
         >
           <h5>{id}</h5>
           <p>{text}</p>
-          <button onClick={() => onHLFocus(hlLink)}>Ver {hlLink}</button>
+
+          {/* Botón para HL asociado */}
+          <div className="linked-section">
+            <strong>↖ HL Vinculado:</strong>{" "}
+            <button onClick={() => onHLFocus(hlLink)}>Ver {hlLink}</button>
+          </div>
+
+          {/* Botones para HW vinculados */}
+          {llHWMap[id] && (
+            <div className="linked-section">
+              <strong>↘ HW Relacionado:</strong>{" "}
+              {llHWMap[id].map((hwId) => (
+                <button key={hwId} onClick={() => onHWFocus(hwId)}>
+                  Ver {hwId}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </div>

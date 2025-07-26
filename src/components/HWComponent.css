@@ -1,0 +1,61 @@
+.hw-list {
+  margin: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hw-list h2 {
+  font-size: 22px;
+  color: #2a3b4c;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.hw-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.hw-item.highlight {
+  border-color: #0074d9;
+  background-color: #e6f2ff;
+}
+
+.hw-item h5 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #004080;
+}
+
+.hw-item p {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.linked-section {
+  margin-top: 10px;
+}
+
+.linked-section strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.linked-section button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  background-color: #d6e6f2;
+  border: 1px solid #0074d9;
+  color: #003366;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linked-section button:hover {
+  background-color: #b3d4f7;
+}
