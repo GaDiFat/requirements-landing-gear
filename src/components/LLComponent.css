@@ -6,9 +6,29 @@
   margin-bottom: 20px;
   padding-left: 12px;
   border-left: 4px solid #ff9800;
+  transition: background-color 0.3s ease;
 }
 
 .ll-item.highlight {
   background-color: #fff3e0;
   border-color: #ef6c00;
+}
+
+.linked-section {
+  margin-top: 10px;
+}
+
+.linked-section button {
+  margin-top: 6px;
+  background-color: #fb8c00;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.linked-section button:hover {
+  background-color: #e65100;
 }

@@ -4,22 +4,38 @@
 
 .hl-item {
   margin-bottom: 20px;
-  padding-left: 12px;
   border-left: 4px solid #2196f3;
+  padding-left: 12px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.hl-item.highlight {
+.hl-item.expanded {
   background-color: #e3f2fd;
   border-color: #0d47a1;
 }
 
-.linked-buttons button {
-  margin-right: 8px;
-  margin-top: 8px;
-  background-color: #1976d2;
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  border-radius: 4px;
-  cursor: pointer;
+.hl-header h5 {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.hl-header p {
+  margin: 4px 0 8px;
+}
+
+.ll-sublist {
+  margin-top: 10px;
+  padding-left: 16px;
+  border-left: 2px dashed #1976d2;
+}
+
+.ll-sublist h4 {
+  margin-bottom: 8px;
+  color: #1976d2;
+}
+
+.ll-item {
+  margin-bottom: 6px;
+  padding: 4px 0;
 }
